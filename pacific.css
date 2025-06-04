@@ -5,11 +5,13 @@ body {
 	background-color: #00569f;
 	color: #666666;
 	font-family: Arial, Helvetica, sans-serif;
+    /* image background */
     background-image: url('./ptrbackground.jpg');
     background-size: 100% 100%; 
     background-repeat: no-repeat;
 
 }
+
 #wrapper {
     width:80%;
     height: fit-content;
@@ -19,14 +21,17 @@ body {
 }
 
 #wrapper > header {
+    /* put the small image in the header */
     background-image: url('./sunset.jpg');
     background-repeat: no-repeat;
     background-position: right;
+    /* this background color actually colors the left column */
     background-color: #000034;
     background-size: auto 100%;
     color: white;
 }
 
+/* highlight the words */
 .resort {
     font-weight: bold;
     color: #5a7aad;
@@ -37,17 +42,23 @@ body {
 }
 
 #content, footer {
+    /*The margin here is a little trick 
+     * along with the coloration of the
+     * background to make the nav bar look like a whole column
+     */
     padding: 0px 20px;
     margin-left: 200px;
     padding-right: 30px;
     background-color: white;
 }
 
+/* special bullet points */
 #content > ul {
     list-style-image: url('./marker.gif');
     list-style-position: inside;
 }
 
+/* footer formatting */
 footer {
     padding: 40px 0px 20px 20px;
 	font-family: Georgia, "Times New Roman", serif;
@@ -56,6 +67,8 @@ footer {
 }
 
 img {
+    /* float left makes it align to the left and the text
+     * goes around it */
     float: left;
     margin: 0px 20px 0px 0px;
 }
@@ -68,6 +81,7 @@ nav {
     margin: 0px 0px 0px 0px;
 }
 
+/* special formatting for the nav bar */
 nav > ul {
     font-weight: bold;
     list-style-type:none;
